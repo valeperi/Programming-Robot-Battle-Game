@@ -8,3 +8,7 @@ Rules:
 - If RobotA shoots RobotB, RobotB loses 100 scores and 1 life, while    RobotA acquires 100 scores and 1 life
 - If RobotA and RobotB have a collision each of them loses 50 scores. If the number of collisions reaches 2 the robot loses 1 life
 - Each time that a robot is hit by a missile or has a collision it appears in a randomic position of the screen and starts again the game
+
+The game screen is developed through the turtle module. It is a 600 x 600 screen whose center has coordinates (x = 0,y = 0)
+
+![Screenshot](image.png)
