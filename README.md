@@ -11,4 +11,4 @@ Rules:
 
 The game screen is developed through the turtle module. It is a 600 x 600 screen whose center has coordinates (x = 0,y = 0)
 
-![Screenshot](image.png)
+![Screenshot](BattleField.png)
