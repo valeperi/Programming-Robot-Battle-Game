@@ -15,4 +15,4 @@ The game is developed in python programming language
 
 The game screen is developed through the Turtle module of python. It is a 600 x 600 screen whose center has coordinates (x = 0,y = 0). The scores, lives and messages for each robot are shown in the right corner of the screen. The Battle Field is shown in the figure below.
 
-![Screenshot](BattleField.png = 250x250)
+![Screenshot](BattleField.png)
