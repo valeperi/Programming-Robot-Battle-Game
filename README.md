@@ -27,5 +27,7 @@ Two types of collision are handled
 
 #### Files:
 The repository contains 5 files .py. 
-- main.py: it contains the classes used to create the objects of the game and the infinite while loop 
-- e CreateObects.py 
+- main.py: it contains the classes used to create the objects of the game and the infinite while loop in which the Robot AI are executed
+- CreateObects.py: here the game and the robots (3 in this case) are created. The characteristics of each color (color, "shape", starting position) are set
+- Robot AI:
+  1 Robt1_AI:  
