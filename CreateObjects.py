@@ -1,8 +1,9 @@
+
 import random
-from  Empatica import Robot # import the Robot class 
-from Empatica import Missile # import the Missile class 
-from Empatica import RobotStatus # import the RobotStatus class
-from Empatica import Game # import the Game class
+from  Assignment_Empatica import Robot # import the Robot class 
+from Assignment_Empatica import Missile # import the Missile class 
+from Assignment_Empatica import RobotStatus # import the RobotStatus class
+from Assignment_Empatica import Game # import the Game class
 
 # Number of Robots *
 robotNum = 3

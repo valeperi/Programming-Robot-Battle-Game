@@ -1,4 +1,4 @@
-import CreateRobots
+import CreateObjects
 
 # Behaviour of Robot2: Robot2 moves forward and when touches the wall of the screen game it bounces with a 30 degree angle. 
 # Robot 1 fires the missile in a randomic way between [0,100] cicles of the while loop
