@@ -18,18 +18,34 @@ Each robot can shoot a missile if and only it is "Ready", that is if the previou
 
 #### Collision:
 Two types of collision are handled
-- collision R-R: it happens when two robots are in same position on the battle field. Both of them lose 50 scores and reappears in a randomic position between x = (-250,250) and y = (-250,250). If the number of R-R collisions of a robot reaches 2, the robot loses 1 life
-- collision R-M: it happens when the missile of a robot and another robot are in the same position on the battle field. The robot hit by the missile loses 100 scores and 1 life and reappears in a randomic position between x = (-250,250) and y = (-250,250), while the robot that shooted the missile acquires 100 scores and 1 life
+- collision R-R: it happens when two robots are in the same position on the battle field. Both of them lose 50 scores and reappears in a randomic position with coordinates in the range x = (-250,250) and y = (-250,250). If the number of R-R collisions of a robot reaches 2, the robot loses 1 life
+- collision R-M: it happens when the missile of a robot and another robot are in the same position on the battle field. The robot hit by the missile loses 100 scores and 1 life and reappears in a randomic position with coordinates in the range x = (-250,250) and y = (-250,250), while the robot that shooted the missile acquires 100 scores and 1 life
 
 #### Losers and Winners
 - A robot dies if its number of lives becomes 0. In this case the robot disappears from the screen and the message "GAME OVER" appears
-- The game stops when just one robot stays alive. When this happens the last robot stops on the screen and the message "WINNER" appears
+- The game stops when just one robot stays alive. When this happens the last robot stops on the battle field and the message "WINNER" appears
 
 #### Files:
 The repository contains 5 files .py. 
-- main.py: it contains the classes used to create the objects of the game and the infinite while loop in which the Robot AI are executed
+- main.py: it contains the classes used to create the objects of the game and the infinite while loop in which the Robot AI are executed. **Run this file to start the game**
 - CreateObects.py: here the game and the robots (3 in this case) are created. The characteristics of each color (color, "shape", starting position) are set
 - Robot AI: Each Robot AI is a separated files. It determines the robot behaviour in terms of movement and how often it shoots a missile
   1. Robot1_AI: It moves with a speed of 30. When it hits the battle field borders it bounces with a randomic angle in the range (0°,360°). It shoots the missile in a randomic instant in the range (0,100) of the while loop, after the previous missile 
   2. Robot2_AI: it moves with a speed of 20. When it hits the battle field borders it bounces with 60°, that changes sign after 50 cicles of the while loop. It shoots the missile at multiples of 10 cicles.
-  3. Robot3_AI: it moves with a speed of 10. When it hits the battle field borders it bounces with 30°. At multiples of 10 cicles it performs a right rotation of 45°. It shoots the missile at multiples of 5 cicles. 
+  3. Robot3_AI: it moves with a speed of 10. When it hits the battle field borders it bounces with 30°. At multiples of 10 cicles it performs a right rotation of 45°. It shoots the missile at multiples of 5 cicles.
+  
+  #### How to create new Robots AI:
+  - CreateRobots: 
+    - row 8: put robotNum = "number of robots in the game"
+    - ```# Create Robot i
+        nameRi = "Robot i" # name of the roboti
+        colorRi = "green" # color of the roboti
+        xpos_roboti = 10 # x position of the roboti
+        ypos_roboti = 30 # y position of the roboti
+        ypos_scorei = 50 # y position of the roboti messages 
+        roboti = Robot(shape, colorRi, xpos_roboti, ypos_roboti) # create Robot object for roboti
+        scorei = RobotStatus() # create the RobotStatus object for the score
+        scorei.show_RobotStatus(nameRi, 320, ypos_scorei, colorRi, game) # show the roboti messages
+        missilei = Missile(shape, colorM, 0, 0) # create the Missile object for missilei
+
+```
