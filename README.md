@@ -39,7 +39,7 @@ The repository contains 5 files .py.
   - in CreateRobots.py: 
     - row 8: put robotNum = "number of robots in the game"
     - from row 47: create the new objects:
-      # Create Robot i```
+      ```# Create Robot i
       nameRi = "Robot i" # name of the roboti
       colorRi = "green" # color of the roboti
       xpos_roboti = 10 # x position of the roboti
