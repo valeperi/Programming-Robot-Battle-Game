@@ -28,15 +28,15 @@ Two types of collision are handled
 #### Files:
 The repository contains 5 files .py. 
 - main.py: it contains the classes used to create the objects of the game and the infinite while loop in which the Robot AI are executed. **Run this file to start the game**
-- CreateObects.py: here the game and the robots (3 in this case) are created. The characteristics of each color (color, "shape", starting position) are set
-- CollisionAndMissile.py: here the functions collision_RR and collision_RM are used to handle respectively the collision between two robots and the collision between a robot and a missile. All the combinations are hadled
+- CreateObjects.py: here the game and the robots (3 in this case) are created. The characteristics of each color (color, "shape", starting position) are set
+- HandleCollisions.py: here the functions collision_RR and collision_RM are used to handle respectively the collision between two robots and the collision between a robot and a missile. All the combinations are hadled
 - Robot AI: Each Robot AI is a separated files. It determines the robot behaviour in terms of movement and how often it shoots a missile
   1. Robot1_AI: It moves with a speed of 30. When it hits the battle field borders it bounces with a randomic angle in the range (0°,360°). It shoots the missile in a randomic instant in the range (0,100) of the while loop, after the previous missile 
   2. Robot2_AI: it moves with a speed of 20. When it hits the battle field borders it bounces with 60°, that changes sign after 50 cicles of the while loop. It shoots the missile at multiples of 10 cicles.
   3. Robot3_AI: it moves with a speed of 10. When it hits the battle field borders it bounces with 30°. At multiples of 10 cicles it performs a right rotation of 45°. It shoots the missile at multiples of 5 cicles.
   
   #### How to create new Robots AI:
-  - in CreateRobots.py: 
+  - in CreateObjects.py: 
     - row 8: put robotNum = "number of robots in the game"
     - from row 47: create the new objects:
       ```# Create Robot i
@@ -57,5 +57,5 @@ The repository contains 5 files .py.
   
 - in main.py:
   - row 239: ```ruby execfile("Robot3_AI.py")```
-- in CollisionAndMissile.py:
+- in HandleCollisions.py:
   - call the functions collision_RR and collision_RM in order to handle all the combinations between robot-robot and robot and missile collisions
