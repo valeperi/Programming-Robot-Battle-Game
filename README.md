@@ -13,7 +13,7 @@ The game screen is developed through the Turtle module of python. It is a 600 x 
 - Each robot is characterised by its own AI. The Robot AI determines the behaviour of the robot, in terms of movement and how often it shoots a missile
 - Each robot has 3 lives and starts with 0 score
 
-**Missile**
+**Missile**\n
 Each robot can shoot a missile if and only if the previous one has reached the border of the battle field
 
 **Collision**
