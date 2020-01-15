@@ -14,7 +14,7 @@ The game screen is developed through the Turtle module of python. It is a 600 x 
 - Each robot has 3 lives and starts with 0 score
 
 #### Missile:
-Each robot can shoot a missile if and only if the previous one has reached the border of the battle field
+Each robot can shoot a missile if and only it is "Ready", that is if the previous one shooted has reached the border of the battle field
 
 #### Collision:
 Two types of collision are handled
@@ -29,5 +29,7 @@ Two types of collision are handled
 The repository contains 5 files .py. 
 - main.py: it contains the classes used to create the objects of the game and the infinite while loop in which the Robot AI are executed
 - CreateObects.py: here the game and the robots (3 in this case) are created. The characteristics of each color (color, "shape", starting position) are set
-- Robot AI:
-  1. Robot1_AI:  
+- Robot AI: Each Robot AI is a separated files. It determines the robot behaviour in terms of movement and how often it shoots a missile
+  1. Robot1_AI: It moves with a speed of 30. When it hits the battle field borders it bounces with a randomic angle in the range (0°,360°). It shoots the missile in a randomic instant in the range (0,100) of the while loop, after the previous missile 
+  2. Robot2_AI: it moves with a speed of 20. When it hits the battle field borders it bounces with 60°, that changes sign after 50 cicles of the while loop. It shoots the missile at multiples of 10 cicles.
+  3. Robot3_AI: it moves with a speed of 10. When it hits the battle field borders it bounces with 30°. At multiples of 10 cicles it performs a right rotation of 45°. It shoots the missile at multiples of 5 cicles.
