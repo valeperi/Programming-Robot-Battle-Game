@@ -37,15 +37,16 @@ The repository contains 5 files .py.
   #### How to create new Robots AI:
   - CreateRobots: 
     - row 8: put robotNum = "number of robots in the game"
-    - ```# Create Robot i
-        nameRi = "Robot i" # name of the roboti
-        colorRi = "green" # color of the roboti
-        xpos_roboti = 10 # x position of the roboti
-        ypos_roboti = 30 # y position of the roboti
-        ypos_scorei = 50 # y position of the roboti messages 
-        roboti = Robot(shape, colorRi, xpos_roboti, ypos_roboti) # create Robot object for roboti
-        scorei = RobotStatus() # create the RobotStatus object for the score
-        scorei.show_RobotStatus(nameRi, 320, ypos_scorei, colorRi, game) # show the roboti messages
-        missilei = Missile(shape, colorM, 0, 0) # create the Missile object for missilei
+    - create the new objects:
+      ```# Create Robot i
+      nameRi = "Robot i" # name of the roboti
+      colorRi = "green" # color of the roboti
+      xpos_roboti = 10 # x position of the roboti
+      ypos_roboti = 30 # y position of the roboti
+      ypos_scorei = 50 # y position of the roboti messages 
+      roboti = Robot(shape, colorRi, xpos_roboti, ypos_roboti) # create Robot object for roboti
+      scorei = RobotStatus() # create the RobotStatus object for the score
+      scorei.show_RobotStatus(nameRi, 320, ypos_scorei, colorRi, game) # show the roboti messages
+      missilei = Missile(shape, colorM, 0, 0) # create the Missile object for missilei
 
 ```
