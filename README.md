@@ -58,4 +58,4 @@ The repository contains 5 files .py.
 - in main.py:
   - row 239: ```ruby execfile("Robot3_AI.py")```
 - in CollisionAndMissile.py:
-  - call the functions collision_RR and collision_RM in order to handle all the combinations between robot-robot and robot and missile
+  - call the functions collision_RR and collision_RM in order to handle all the combinations between robot-robot and robot and missile collisions
