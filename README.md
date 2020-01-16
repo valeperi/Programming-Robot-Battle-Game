@@ -58,7 +58,7 @@ The repository contains 5 files .py.
   - etc...
   
 - in main.py:
-  - row 239: ```execfile("Roboti_AI.py")```
+  - row 231: ```execfile("Roboti_AI.py")```
 - in HandleCollisions.py:
   - call the functions collision_RR and collision_RM in order to handle all the combinations between robot-robot and robot and missile collisions
   
