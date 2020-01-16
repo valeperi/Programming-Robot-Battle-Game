@@ -1,7 +1,9 @@
 import CreateObjects
 
-# Behaviour of Robot2: Robot2 moves forward and when touches the wall of the screen game it bounces with a 30 degree angle. 
-# Robot 1 fires the missile in a randomic way between [0,100] cicles of the while loop
+# Behaviour of Robot3: it moves with a speed of 10. When it hits the battle field borders it bounces 
+# with 30°. At multiples of 10 cicles it performs a right rotation of 45°. It shoots the missile at multiples 
+# of 5 cicles.
+  
 
 robot3.move(30,game)
 robot3.speed = 10

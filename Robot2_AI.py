@@ -1,7 +1,9 @@
 import CreateObjects
 
-robot2.move(angleR2,game) # il robot 1 si muove in modo randomico sullo schermo
-
+# Behaviour of Robot2: it moves with a speed of 20. When it hits the battle field borders it bounces 
+# with 60°, that changes sign after 50 cicles of the while loop. It shoots the missile at multiples 
+# of 10 cicles.
+robot2.move(angleR2,game) 
 missile2.move()
 
 if time%50 == 0: 
