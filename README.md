@@ -61,3 +61,8 @@ The repository contains 5 files .py.
   - row 239: ```execfile("Robot3_AI.py")```
 - in HandleCollisions.py:
   - call the functions collision_RR and collision_RM in order to handle all the combinations between robot-robot and robot and missile collisions
+  
+#### Possible improvements
+- automatic management of the combinations of collisions R-R and R-M
+- introduction of levels in the game 
+
