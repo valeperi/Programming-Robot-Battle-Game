@@ -16,7 +16,7 @@ The game screen is developed through the Turtle module of python. It is a 600 x 
 - Each robot has 3 lives and starts with 0 score
 
 #### Missile:
-Each robot can shoot a missile if and only it is "Ready", that is if the previous one shooted has reached the border of the battle field
+Each robot can shoot a missile if and only the missile is "Ready", that is if the previous one shooted has reached the border of the battle field
 
 #### Collision:
 Two types of collision are handled
