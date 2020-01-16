@@ -2,7 +2,7 @@
 
 *A programming game is a game based on computer programming. Unlike arcade type games which require human inputs controlling some object, all strategy in a Programming Robot Battle Game must be complete before the actual game begins. Game strategy is condensed into a language that the player will use to design and write their Robot AI.  Multiple Robots will battle against each other in a virtual arena. Only one will win.*
 
-The game is developed in python programming language
+The game is written in python programming language
 
 ## Game Description:
 #### Battle Field:
