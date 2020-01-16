@@ -28,7 +28,7 @@ Two types of collision are handled
 - The game stops when just one robot stays alive. When this happens the last robot stops on the battle field and the message "WINNER" appears
 
 #### Files:
-The repository contains 5 files .py. 
+The repository contains 6 files .py. 
 - main.py: it contains the classes used to create the objects of the game and the infinite while loop in which the Robot AI are executed. **Run this file to start the game**
 - CreateObjects.py: here the game and the robots (3 in this case) are created. The characteristics of each color (color, shape, starting position) are set
 - HandleCollisions.py: here the functions collision_RR and collision_RM are used to handle respectively the collision between two robots and the collision between a robot and a missile. All the combinations are hadled
